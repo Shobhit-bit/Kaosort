@@ -75,7 +75,3 @@ Then, in the browser UI:
 - **`embed_dir` cleanup on cluster step** — `os.rmdir(embed_dir)` at the end of the clustering step assumes `embed_dir` is defined and empty. Because Streamlit reruns the whole script on every interaction, this variable may not be set in the run where the cluster button is pressed, which can raise a `NameError`. Recomputing `embed_dir = os.path.join(output_path, "embeds")` right before this call (and using `shutil.rmtree` in case files remain) would make this more robust.
 - **No deduplication** — re-running a scan on overlapping photo sets doesn't check for duplicates.
 - **One face per person assumption** — photos with multiple faces will contribute one embedding per detected face, so a single photo can end up copied into more than one cluster folder.
-
-## License
-
-Add your preferred license here.
