@@ -1,6 +1,6 @@
-# Face Sorting System
+# Face Sorting System{Incomplete}
 
-A Streamlit app that scans a folder of photos, detects and filters faces, then clusters them into folders by identity using face embeddings — handy for sorting event or group photos by the people in them.
+A Streamlit app that scans a folder of photos, detects and filters faces, then clusters them into folders by identity using face embeddings — handy for sorting event or group photos by the people in them.(mobile app in development)
 
 ## How it works
 
